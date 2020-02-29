@@ -19,6 +19,7 @@ h1 {
 h2 {font-size: 32px;}
 h3 {font-size: 24px;}
 a {color: #388CB0; text-decoration: none;}
+a:hover {text-decoration: underline;}
 p { line-height: 1.4em; margin-top: .6em; }
 section, header, footer ul { padding: 2em 5em; }
 section { margin-bottom: 4em; }
@@ -38,6 +39,7 @@ header h2 {
   margin-bottom: 0;
   color: #334147;
 }
+li {margin:5px 0;}
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
