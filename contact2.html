@@ -9,27 +9,26 @@
 	<link rel="stylesheet" type="text/css" href="css/meyer_reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="/favicon.ico">
-	
-	<!--  Essential META Tags -->
+	<style>
+		form {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		label {
+		}
+		input[type=text], input[type=email] { 
+			padding: 6px; margin-left: 6px;
+		}
 
-	<meta property="og:title" content="Alanna Risse _ Artist, Educator, Web Developer">
-	<meta property="og:description" content="Online instruction in Web Development and Design">
-	<meta property="og:image" content="http://alannarisse.com/assets/banners/soc-banner.png">
-	<meta property="og:url" content="http://alannarisse.com">
-	<meta name="twitter:card" content="summary_large_image">
-
-	<!--  Non-Essential, But Recommended -->
-
-	<meta property="og:site_name" content="Alanna Risse">
-	<meta name="twitter:image:alt" content="Alanna Risse Art">
-
-
-	<!--  Non-Essential, But Required for Analytics -->
-
-	<meta property="fb:app_id" content="2903743646360668" />
-	<meta name="twitter:site" content="@alannarisse">
+	</style>
 </head>
-<body class="home">
+<body class="contact">
+
+
+
+
+
+	<a href="mailto:alanna@alannarisse.com?subject=contact &cc=frog@email.com">Contact me</a>
 	<nav class="topnav" id="myTopnav">
 		<a href="https://alannarisse.com/index.html" class="active">Home</a>
 		<a href="http://alannarisse.com/blog/">Blog</a>
@@ -43,29 +42,26 @@
 	</nav>
 	<header>
 		<h1>Alanna Risse</h1>
-		<h2>Art, Education, Creative Technology, Dogs, Kids, Thoughts.</h2>
+		<h2>Hi there. I'm a web developer, teacher, artist, and writer in Portland, Oregon. This here is the portal to my digital world.</h2>
 	</header>
 
 	<main role="main">
 		<section class="grid art-section">
-			<h2 class="sect-head">Teaching Tech</h2>
-			
-			<div>
-				<a href="https://codelovecode.com/"><img src="assets/thumbs/art/clc_anim1_200.gif"></a>
-				<p><a href="https://codelovecode.com/">CodeLoveCode</a><br>Quick Javascript, HTML, CSS, Node, React, and git tutorials</p>
-			</div>
-			<div>
-				<a href="http://portfolio.alannarisse.com/"><img src="assets/thumbs/art/web_port.png"></a>
-				<p><a href="http://portfolio.alannarisse.com/">Web Portfolio</a></p>
-			</div>
-			<div>
-				<a href="https://austinstartups.com/@alannarisse"><img src="assets/thumbs/tech_gender_gap.png"></a>
-				<p><a href="https://austinstartups.com/@alannarisse">Article: Tech Gender Gap</a></p>
-			</div>
-			<div>
-				<a href="teaching/index.html"><img src="assets/thumbs/art/pirate_purple.jpeg"></a>
-				<p><a href="/teaching/index.html">Teaching Experience</a></p>
-			</div>
+
+<form action="https://getsimpleform.com/messages?form_api_token=286daf83bec78e71db2ae5f8c71447f3" method="post">
+
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='http://alannarisse.com/thankyou.html' />
+
+  <!-- all your input fields here.... -->
+  name: <input type='text' name='name' />
+  email: <input type='email' name='email' />
+  <textarea name="message" id="" cols="30" rows="10"></textarea>
+  <input type="file" id="file"  accept="image/png" name="file" multiple>
+
+
+  <input type='submit' value='Test form' />
+</form>
 		</section>
 		<section class="grid art-section">
 			<h2 class="sect-head">Art</h2>
@@ -223,18 +219,7 @@
 			<li><a href="https://github.com/alannarisse" target="_blank"><img src="assets/icons/github.svg" class="soc-icon"></a></li>
 			<li><a href="https://instagram.com/alannarisse" target="_blank"><img src="assets/icons/instagram.svg" class="soc-icon"></a></li>
 		</footer>
-		<script>
-
-			function myFunction() {
-				var x = document.getElementById("myTopnav");
-				if (x.className === "topnav") {
-					x.className += " responsive";
-				} else {
-					x.className = "topnav";
-				}
-			}
-
-		</script>
+		
 	</body>
 	</html>
 

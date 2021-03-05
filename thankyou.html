@@ -9,27 +9,26 @@
 	<link rel="stylesheet" type="text/css" href="css/meyer_reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="/favicon.ico">
-	
-	<!--  Essential META Tags -->
+	<style>
+		form {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		label {
+		}
+		input[type=text], input[type=email] { 
+			padding: 6px; margin-left: 6px;
+		}
 
-	<meta property="og:title" content="Alanna Risse _ Artist, Educator, Web Developer">
-	<meta property="og:description" content="Online instruction in Web Development and Design">
-	<meta property="og:image" content="http://alannarisse.com/assets/banners/soc-banner.png">
-	<meta property="og:url" content="http://alannarisse.com">
-	<meta name="twitter:card" content="summary_large_image">
-
-	<!--  Non-Essential, But Recommended -->
-
-	<meta property="og:site_name" content="Alanna Risse">
-	<meta name="twitter:image:alt" content="Alanna Risse Art">
-
-
-	<!--  Non-Essential, But Required for Analytics -->
-
-	<meta property="fb:app_id" content="2903743646360668" />
-	<meta name="twitter:site" content="@alannarisse">
+	</style>
 </head>
-<body class="home">
+<body class="contact">
+
+<h1>Thank you!</h1>
+
+
+
+	<a href="mailto:alanna@alannarisse.com?subject=contact &cc=frog@email.com">Contact me</a>
 	<nav class="topnav" id="myTopnav">
 		<a href="https://alannarisse.com/index.html" class="active">Home</a>
 		<a href="http://alannarisse.com/blog/">Blog</a>
@@ -43,29 +42,43 @@
 	</nav>
 	<header>
 		<h1>Alanna Risse</h1>
-		<h2>Art, Education, Creative Technology, Dogs, Kids, Thoughts.</h2>
+		<h2>Hi there. I'm a web developer, teacher, artist, and writer in Portland, Oregon. This here is the portal to my digital world.</h2>
 	</header>
 
 	<main role="main">
 		<section class="grid art-section">
-			<h2 class="sect-head">Teaching Tech</h2>
-			
-			<div>
-				<a href="https://codelovecode.com/"><img src="assets/thumbs/art/clc_anim1_200.gif"></a>
-				<p><a href="https://codelovecode.com/">CodeLoveCode</a><br>Quick Javascript, HTML, CSS, Node, React, and git tutorials</p>
-			</div>
-			<div>
-				<a href="http://portfolio.alannarisse.com/"><img src="assets/thumbs/art/web_port.png"></a>
-				<p><a href="http://portfolio.alannarisse.com/">Web Portfolio</a></p>
-			</div>
-			<div>
-				<a href="https://austinstartups.com/@alannarisse"><img src="assets/thumbs/tech_gender_gap.png"></a>
-				<p><a href="https://austinstartups.com/@alannarisse">Article: Tech Gender Gap</a></p>
-			</div>
-			<div>
-				<a href="teaching/index.html"><img src="assets/thumbs/art/pirate_purple.jpeg"></a>
-				<p><a href="/teaching/index.html">Teaching Experience</a></p>
-			</div>
+
+
+<form action="https://getsimpleform.com/messages?form_api_token=286daf83bec78e71db2ae5f8c71447f3" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://alannarisse.com/thank-you.html>' />
+  <!-- all your input fields here.... -->
+  name: <input type='text' name='name' />
+  email: <input type='email' name='email' />
+  image: <input type="file" accept="image/*,.pdf">
+  comments: <textarea name="comments"></textarea>
+  <input type='submit' value='Test form' />
+</form>
+			<!-- https://formspree.io/xknbkyqo -->
+
+<!-- 
+			<form action="https://formspree.io/xknbkyqo" method="POST">
+  <label for="name"> Name: </label><input type="text" name="name">
+  <label for="email"> Email: </label><input type="email" name="_replyto">
+  <input type="hidden" name="_subject" value="New submission!" />
+
+  <input type="submit" value="Send">
+
+</form> -->
+
+<!-- <form action="https://getsimpleform.com/messages?form_api_token=286daf83bec78e71db2ae5f8c71447f3" method="post">  
+  <input type='hidden' name='redirect_to' value='http://alannarisse.com/contact.html?thanks=yes' />
+ test field <input type='text' name='test' />
+  name field <input type='text' name='name' />
+   email field <input type='email' name='email' />
+  <input type='submit' value='Test form' />
+</form>  -->
+
 		</section>
 		<section class="grid art-section">
 			<h2 class="sect-head">Art</h2>
@@ -233,7 +246,9 @@
 					x.className = "topnav";
 				}
 			}
-
+			var query = window.location.search.substring(1);
+				// var qs = parse_query_string(query);
+				alert(query);
 		</script>
 	</body>
 	</html>

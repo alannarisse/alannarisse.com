@@ -9,12 +9,19 @@
 
 */
 
-body {margin:0;font-family: 'Lato', sans-serif; color: #333;}
+body {
+  margin:0;
+  font-family: 'Lato', sans-serif; 
+  color: #333;
+}
 
-h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif; font-weight: 600;margin-bottom: 1em;}
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 600;
+  margin-bottom: 1em;}
 .btn {font-family: 'Oswald', sans-serif; font-weight: 400;}
 h1 { 
-  font-size: 48px;
+  font-size: 60px;
  }
 h2 {font-size: 32px;}
 h3 {font-size: 24px;}
@@ -25,19 +32,26 @@ section, header, footer ul { padding: 2em 5em; }
 section { margin-bottom: 4em; }
 header {
   height: 350px;
-  background-image: url('../assets/banners/seaview2.png');
+  background-image: url('../assets/banners/despondent1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  
 }
-header h1 { margin-bottom: .2em; }
+header h1 { 
+  margin-bottom: .2em; 
+  /*color: #388cb0;*/
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 3px #333;
+}
 header h2 { 
   font-weight: 400; 
-  font-size: 24px; 
-  max-width: 550px; 
+  font-size: 48px; 
   line-height: 1.4em;
   margin-bottom: 0;
-  color: #334147;
+  color: #fff;
+  text-shadow: 2px 1px 3px #333;
 }
 li {margin:5px 0;}
 .grid {
@@ -118,7 +132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334147', end
 .topnav .dropdown .drop-parent {padding:0 4px;}
 
 .active {
-  background-color: #5E373E;
+  background-color: #388cb0;
   color: white;
 }
 
@@ -182,24 +196,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334147', end
   .grid {grid-template-columns: 1fr;}
   .double-col { grid-column: 1 / -1;}
   .sect-head {margin:0;}
-  header {background-image: none; height: auto;}
+  header {background-image: url('../assets/banners/despondent1-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;}
   section, header, footer ul {padding: 1em;}
-
-}
-
-/* Topnav Media Qs from W3Schools */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -218,6 +219,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334147', end
     width: 100%;
     text-align: left;
   }
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* Topnav Media Qs from W3Schools */
+@media screen and (max-width: 600px) {
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  
 }
 
 /* END Topnav Media Qs from W3Schools */
